@@ -1,12 +1,12 @@
 import './App.css';
+import HomePage from './pages/HomePage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p className="para">REACT</p>
-      </header>
-    </div>
+    // <div className="App">
+      
+    // </div>
+    <HomePage/>
   );
 }
 
