@@ -7,40 +7,35 @@ html {
 }
 
 .nav {
-  background: transparent;
-
-  padding-top: 1px;
-  position: relative;
-  text-align: left;
+  background: rgb(167, 217, 255);
+  height: 80px;
+  display: flex;
 }
 
-.logoButton {
-  background-color: transparent;
-  border: 1;
-  width: 40px;
-  height: 40px;
-  position: relative;
+.nav ul {
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
 }
 
-.logoButton img {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  top:50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+.logo {
+  float: left;
+  margin: 10px;
+  width: auto;
+  height: auto;
 }
 
 .navButton {
-  position: relative;
+  display: inline-block;
   background-color: transparent;
-  border: 1;
-  padding: 15px;
-  padding-left: 20px;
-  padding-right: 20px;
+  width: 100px;
+  height: 80px;
+  border: none;
+  /* margin-left: 150px; This moves the position of the buttons */
   transition: 0.6s;
+  position: center;
 }
 
 .navButton:hover {
@@ -49,3 +44,4 @@ html {
   box-shadow: 0 0 60px 5px hsla(0, 0%, 100%, 0.555);
   transition: 0.6s;
 }
+

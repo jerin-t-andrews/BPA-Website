@@ -5,17 +5,17 @@ import logo from './favicon.ico'
 const NavBar = () => {
     return (
         <nav className="nav">
-            <Link to="/">
-                <button className='logoButton'>
-                    <img src={logo} alt='logopng'></img>
-                </button>
-            </Link>
+            <ul>
+                <Link to="/">
+                    <img className='logo' src={logo} alt='logopng'></img>
+                </Link>
 
-            <Link to="/CarList">
-                <button className='navButton'>
-                    Shop
-                </button>
-            </Link>
+                <Link to="/CarList">
+                    <button className='navButton'>
+                        Shop
+                    </button>
+                </Link>
+            </ul>
         </nav>
     )
 }
