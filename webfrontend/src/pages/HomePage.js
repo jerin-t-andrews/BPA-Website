@@ -15,6 +15,7 @@ const HomePage = () => {
                 </div>
                 </div>
             
+                <div className='homedivider'></div>
 
             <Parallax strength={600} bgImage={luxury}>
                 <div className='content'>
@@ -22,7 +23,7 @@ const HomePage = () => {
                     <h1>Luxury</h1>
                     <p>Travel in style</p>
                 </div>
-                <button type='button' className='btn'>Buy Now</button>
+                <button type='button' className='btn'>Shop Now</button>
                 </div>
             </Parallax>
 
@@ -35,7 +36,7 @@ const HomePage = () => {
                     <p>Keeping it modern</p>
                 </div>
 
-                <button type='button' className='btn'>Buy Now</button>
+                <button type='button' className='btn'>Shop Now</button>
 
                 </div>
             </Parallax>
@@ -50,21 +51,29 @@ const HomePage = () => {
                     <p>Exploration on a budget</p>
                 </div>
 
-                <button type='button' className='btn'>Buy Now</button>
+                <button type='button' className='btn'>Shop Now</button>
+
+                <table className='aboutTable'>
+                    <tr>
+                        <th>Caravelle</th>
+                        <th>Contact</th>
+                        <th>Sources</th>
+                    </tr>
+                </table>
                 
                 </div>
             </Parallax>
-
+                {/*
                 <div className='about'>
                 <table>
                     <tr>
                         <th>Caravelle</th>
-                        <th>Contact Us</th>
+                        <th>Contact</th>
                         <th>Sources</th>
                     </tr>
                 </table>
                 </div>
-            
+    */}
         </div>
 
         
