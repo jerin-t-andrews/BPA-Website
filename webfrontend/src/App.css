@@ -41,11 +41,17 @@ html {
   position: center;
 }
 
+.navFirst { /* Centers the navbar, may need to be updated*/
+  margin-left: 45vw;
+}
+
 .navButton:hover {
-  background-color: rgb(106, 106, 106);
+  background-color: rgb(106, 106, 106, 0.5); /* 0.5 indicates transparency*/
   /* background: transparent; */
-  box-shadow: 0 0 60px 5px hsla(0, 0%, 100%, 0.555);
+  /*box-shadow: 0 0 60px 5px hsla(0, 0%, 100%, 0.555);*/
+  
   transition: 0.6s;
+  /*clip-path: inset(29% 9% 27% 8%);*/
 }
 
 .content {
@@ -53,6 +59,18 @@ html {
 }
 
 .text-content {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  padding: 5px 15px;
+  transform: translate(-50%, -50%);
+  /*background: gray;*/
+  color: white;
+  border-radius: 20px;
+  font-size: 50px;
+}
+
+.logo-content {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -75,5 +93,64 @@ body {
 }
 
 .about {
-  height: 30vh;
+  
+  text-align: center;
+  
+}
+
+.btn {
+  -webkit-border-radius: 7;
+  -moz-border-radius: 7;
+  border-radius: 7px;
+  -webkit-box-shadow: 0px 0px 20px #666666;
+  -moz-box-shadow: 0px 0px 20px #666666;
+  box-shadow: 0px 0px 20px #666666;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #000000;
+  padding: 10px 60px 10px 60px;
+  text-decoration: none;
+  position: absolute;
+  margin: 42% 0;
+  right: 45%;
+  transition: 0.6s;
+}
+
+.btn:hover {
+  background: #808080;
+  text-decoration: none;
+  transition: 0.6s;
+}
+
+.homedivider {
+  background: #000000;
+  height: 50px;
+}
+
+h1 {
+  color: black;
+}
+
+p {
+  color: black;
+}
+
+.about-table {
+  color: black;
+}
+
+th {
+  border: transparent;
+  text-align: center;
+  padding: 8px;
+  font-size: 18px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 20%;
+  position: relative;
+  left: 40%;
 }
