@@ -9,18 +9,21 @@ html {
 .nav {
   background: #3C2A21;
   height: 80px;
-  display: flex;
+  /*display: flex;*/
   background-color: transparent;
+  /*margin: 0 auto;*/
+  width: 100%;
 }
 
-.nav ul {
+.nav table {
   padding: 0px;
-  margin: 0px;
   text-align: center;
-  display: inline-block;
+  /*display: inline-block;*/
   vertical-align: top;
   position: fixed;
+  left: 40%;
   z-index: 10;
+  margin: 0 auto;
 }
 
 .logo {
@@ -30,19 +33,29 @@ html {
   height: auto;
 }
 
-.navButton {
+.navLogo {
   display: inline-block;
   background-color: transparent;
-  width: 100px;
-  height: 80px;
   border: none;
   /* margin-left: 150px; This moves the position of the buttons */
   transition: 0.6s;
   position: center;
 }
 
-.navFirst { /* Centers the navbar, may need to be updated*/
-  margin-left: 45vw;
+.navButton {
+  display: inline-block;
+  background-color: transparent;
+  width: 90px;
+  height: 50px;
+  border: none;
+  /* margin-left: 150px; This moves the position of the buttons */
+  transition: 0.6s;
+  position: center;
+  font-size: 24px;
+}
+
+.centerNav {
+  margin: 0 auto;
 }
 
 .navButton:hover {
@@ -111,9 +124,9 @@ body {
   background: #000000;
   padding: 10px 60px 10px 60px;
   text-decoration: none;
-  position: absolute;
-  margin: 42% 0;
-  right: 45%;
+  position: relative;
+  right: 0;
+  top: 80%;
   transition: 0.6s;
 }
 
@@ -152,5 +165,11 @@ table {
   border-collapse: collapse;
   width: 20%;
   position: relative;
-  left: 40%;
+  margin: 0 auto;
+}
+
+.aboutTable {
+  position: relative;
+  top: 90%;
+  color: white;
 }
