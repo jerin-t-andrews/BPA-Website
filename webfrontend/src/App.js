@@ -2,7 +2,7 @@ import './App.css';
 import NavBar from './components/NavBar';
 import HomePage from './pages/HomePage';
 import CarList from './pages/CarList'
-import Contact from './pages/Contact'
+import Contact from './pages/ContactNew'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 //import { Parallax } from 'react-parallax';
 
