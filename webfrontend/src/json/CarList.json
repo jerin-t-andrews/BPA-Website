@@ -3,12 +3,34 @@
         "id": 1,
         "model": "Toyota",
         "make": "Camry",
-        "year": 1994 
+        "year": 1994,
+        "path": "../car-list-images/luxury.jpg" 
     },
     {
         "id": 2,
         "model": "Toyota",
         "make": "Corolla",
+        "year": 2015,
+        "path": "../car-list-images/luxury.jpg"
+    },
+    {
+        "id": 3,
+        "model": "Toyota",
+        "make": "Hatchback",
+        "year": 2015,
+        "path": "../car-list-images/luxury.jpg"
+    },
+    {
+        "id": 4,
+        "model": "Toyota",
+        "make": "Supra",
+        "year": 2015,
+        "path": "../car-list-images/luxury.jpg"
+    },
+    {
+        "id": 5,
+        "model": "Toyota",
+        "make": "Camry Hybrid",
         "year": 2015,
         "path": "../car-list-images/luxury.jpg"
     }

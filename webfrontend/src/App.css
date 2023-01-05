@@ -176,11 +176,12 @@ table {
 }
 
 .options {
-  background-color: blue;
+  border-radius: 25px;
+  background-color: #000000;
   width: 15vw;
   height: 20vh;
   position: fixed;
-  transform: translateY(30vh);
+  transform: translate(2vw, 30vh);
 }
 
 .options select {
@@ -188,12 +189,35 @@ table {
   margin: auto;
 }
 
+.options h1 {
+  position: absolute;
+  bottom: 20vh;
+}
+
 .options-items {
   position: relative;
-  vertical-align: middle;
+  top: 30%;
 }
 
 .ConLink {
   color: white;
   text-decoration: none;
+}
+
+.carList {
+  color: black;
+}
+
+.carList td {
+  font-family: arial, sans-serif;
+  border: 2px solid black;
+  border-collapse: collapse;
+  width: 20%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.carList img {
+  height: 20vh;
+  margin: 0;
 }

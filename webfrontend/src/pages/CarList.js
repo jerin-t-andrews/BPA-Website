@@ -5,6 +5,7 @@ const CarList = () => {
     return (
         <div className="ListPage">
             <div className='options'>
+                <h1>Refine your Search</h1>
                 <div className='options-items'>
                     <select>
                         {data_.map((car) => {
@@ -20,7 +21,22 @@ const CarList = () => {
                 </div>
             </div>
             <br></br>
+            <div className='carList'>
+                <table>
+                    {data_.map((item, i) => (
+                        <tr key={i}>
+                            <td><img src={item.path} alt='carpic'></img></td>
+                            <td><p>{item.make}</p></td>
+                        </tr>
+    ))}
+                </table>
+            </div>
+            {/*}
             <img src={data_[1].path} alt="im"/>
+            <img src={data_[1].path} alt="im"/>
+            <img src={data_[1].path} alt="im"/>
+            <img src={data_[1].path} alt="im"/>
+                */}
             {/* <img src={require(data_[1].path)} alt="imr"></img> */}
             <br/>
             <br/>
