@@ -8,6 +8,9 @@ const Contact_new = () => {
     const form = useRef();
 
     const sendEmail = (e) => {
+        document.getElementById('user_name').value = '';
+        document.getElementById('user_email').value = '';
+        document.getElementById('message').value = '';
         e.preventDefault();
 
         emailjs
@@ -30,20 +33,27 @@ const Contact_new = () => {
 
     return (
         <StyledContactForm>
-        <form ref={form} onSubmit={sendEmail}>
+        <form ref={form} onSubmit={sendEmail} >
             <label>Name</label>
-            <input type="text" name="user_name" />
+            <input type="text" name="user_name" id="user_name"/>
             <label>Email</label>
-            <input type="email" name="user_email" />
+            <input type="email" name="user_email" id="user_email"/>
             <label>Message</label>
-            <textarea name="message" />
-            <input type="submit" value="Send" />
+            <textarea name="message" id="message"/>
+            <input type="submit" value="Send"/>
         </form>
         </StyledContactForm>
     );
 };
 
 export default Contact_new;
+
+//Clears the input fields when the 'send' button is pressed
+// function reset_values() {
+//     document.getElementById('user_name').value = '';
+//     document.getElementById('user_email').value = '';
+//     document.getElementById('message').value = '';
+// }
 
 // Styles
 const StyledContactForm = styled.div`

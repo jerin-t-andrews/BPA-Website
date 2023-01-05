@@ -4,6 +4,8 @@ import data_ from '../json/CarList.json';
 const CarList = () => {
     return (
         <div className="ListPage">
+            <input placeholder='Search'></input>
+            <br/>
             <div className='options'>
                 <h1>Refine your Search</h1>
                 <div className='options-items'>
@@ -20,7 +22,7 @@ const CarList = () => {
                     </select>
                 </div>
             </div>
-            <br></br>
+            <br/>
             <div className='carList'>
                 <table>
                     {data_.map((item, i) => (
