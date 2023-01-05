@@ -18,9 +18,6 @@ function App() {
           <Route element={<Contact/>} path="/Contact" exact/>
         </Routes>
       </Router>
-
-      
-
     </div>
   )
 }

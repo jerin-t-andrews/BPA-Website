@@ -5,6 +5,7 @@ import used from '../car-images/new-new-used2.jpg';
 import newcars from '../car-images/new-new.jpg';
 import { Link } from 'react-router-dom'
 
+
 const HomePage = () => {
     
     return (
@@ -57,11 +58,9 @@ const HomePage = () => {
                 <table className='aboutTable'>
                     <tr>
                         <th>Caravelle</th>
-                        <th>
-                        <Link to="/Contact">
-                            Contact
+                        <Link to="/Contact" className='ConLink'>
+                            <th>Contact</th>
                         </Link>
-                        </th>
                         <th>Sources</th>
                     </tr>
                 </table>

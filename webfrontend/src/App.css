@@ -192,3 +192,8 @@ table {
   position: relative;
   vertical-align: middle;
 }
+
+.ConLink {
+  color: white;
+  text-decoration: none;
+}
