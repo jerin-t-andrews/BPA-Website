@@ -174,3 +174,21 @@ table {
   top: 90%;
   color: white;
 }
+
+.options {
+  background-color: blue;
+  width: 15vw;
+  height: 20vh;
+  position: fixed;
+  transform: translateY(30vh);
+}
+
+.options select {
+  width: 10vw;
+  margin: auto;
+}
+
+.options-items {
+  position: relative;
+  vertical-align: middle;
+}
