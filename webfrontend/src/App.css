@@ -173,3 +173,8 @@ table {
   top: 90%;
   color: white;
 }
+
+.ConLink {
+  color: white;
+  text-decoration: none;
+}
