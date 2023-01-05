@@ -1,0 +1,15 @@
+[
+    {
+        "id": 1,
+        "model": "Toyota",
+        "make": "Camry",
+        "year": 1994 
+    },
+    {
+        "id": 2,
+        "model": "Toyota",
+        "make": "Corolla",
+        "year": 2015,
+        "path": "../car-list-images/luxury.jpg"
+    }
+]
