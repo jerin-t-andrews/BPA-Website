@@ -51,7 +51,7 @@ html {
   /* margin-left: 150px; This moves the position of the buttons */
   transition: 0.6s;
   position: center;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .centerNav {
@@ -59,10 +59,10 @@ html {
 }
 
 .navButton:hover {
-  background-color: rgb(106, 106, 106, 0.5); /* 0.5 indicates transparency*/
+  /* background-color: rgb(106, 106, 106, 0.5); 0.5 indicates transparency */
   /* background: transparent; */
   /*box-shadow: 0 0 60px 5px hsla(0, 0%, 100%, 0.555);*/
-  
+  font-size: 24px;
   transition: 0.6s;
   /*clip-path: inset(29% 9% 27% 8%);*/
 }
