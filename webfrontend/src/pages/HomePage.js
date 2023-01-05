@@ -3,6 +3,7 @@ import { Parallax } from 'react-parallax';
 import luxury from '../car-images/new-luxury2.jpg';
 import used from '../car-images/new-new-used2.jpg';
 import newcars from '../car-images/new-new.jpg';
+import { Link } from 'react-router-dom'
 
 const HomePage = () => {
     
@@ -56,7 +57,11 @@ const HomePage = () => {
                 <table className='aboutTable'>
                     <tr>
                         <th>Caravelle</th>
-                        <th>Contact</th>
+                        <th>
+                        <Link to="/Contact">
+                            Contact
+                        </Link>
+                        </th>
                         <th>Sources</th>
                     </tr>
                 </table>
