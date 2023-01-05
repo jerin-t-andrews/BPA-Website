@@ -3,6 +3,7 @@ import NavBar from './components/NavBar';
 import HomePage from './pages/HomePage';
 import CarList from './pages/CarList'
 import Contact from './pages/Contact'
+import ContactNew from './pages/Contact_new'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 //import { Parallax } from 'react-parallax';
 
@@ -16,6 +17,7 @@ function App() {
           <Route element={<HomePage/>} path="/" exact/>
           <Route element={<CarList/>} path="/CarList" exact/>
           <Route element={<Contact/>} path="/Contact" exact/>
+          <Route element={<ContactNew/>} path="ContactNew" exact/>
         </Routes>
       </Router>
 
