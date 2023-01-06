@@ -33,10 +33,14 @@ html {
   height: auto;
 }
 
-.navLogo {
+/* Come here and make changes to the button because there is still some styling left to do */
+.navLogo { 
   display: inline-block;
   background-color: transparent;
   border: none;
+  margin-top: 10px;
+  max-height: 70px;
+  max-width: 70px;
   /* margin-left: 150px; This moves the position of the buttons */
   transition: 0.6s;
   position: center;

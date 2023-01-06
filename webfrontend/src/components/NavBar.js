@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import logo from './favicon.ico'
+import logo_ from './caravellecut.png'
 
 const NavBar = () => {
     return (
@@ -9,7 +10,7 @@ const NavBar = () => {
                 <tr>
                     <th>
                         <Link to="/">
-                            <img className='navLogo' src={logo} alt='logopng'></img>
+                            <img className='navLogo' src={logo_} alt='logopng'></img>
                         </Link>
                     </th>
                     <th>
