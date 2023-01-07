@@ -5,7 +5,7 @@ import logo_ from './caravellecut.png'
 
 const NavBar = () => {
     return (
-        <nav className="nav">
+        <nav className="navbar">
             <table>
                 <tr>
                     <th>
@@ -13,6 +13,7 @@ const NavBar = () => {
                             <img className='navLogo' src={logo_} alt='logopng'></img>
                         </Link>
                     </th>
+                    <th className='splitter'/>
                     <th>
                         <Link to="/CarList">
                             <button className='navButton'>

@@ -2,16 +2,16 @@ html {
   height: 100%;
 }
 
-.nav {
+.navbar {
   /* background: #3C2A21; */
-  height: 80px;
+  max-height: 100px;
   /*display: flex;*/
   background-color: transparent;
   /*margin: 0 auto;*/
   width: 100%;
 }
 
-.nav table {
+.navbar table {
   padding: 0px;
   text-align: center;
   /*display: inline-block;*/
@@ -20,8 +20,13 @@ html {
   position: fixed;
   left: 0%;
   z-index: 10;
+  height:60px;
   width: 100%;
   margin: 0 auto;
+}
+
+.splitter {
+  width: 1200px;
 }
 
 .logo {
@@ -36,12 +41,18 @@ html {
   display: inline-block;
   background-color: transparent;
   border: none;
-  margin-top: 10px;
-  max-height: 70px;
-  max-width: 70px;
+  /* margin-top: 10px; */
+  max-height: 50px;
+  max-width: 50px;
   /* margin-left: 150px; This moves the position of the buttons */
   transition: 0.6s;
   position: center;
+}
+
+.navLogo:hover{
+  max-height: 53px;
+  max-width: 53px;
+  transition: .4s;
 }
 
 .navButton {
