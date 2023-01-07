@@ -2,12 +2,8 @@ html {
   height: 100%;
 }
 
-.para {
-  color: green;
-}
-
 .nav {
-  background: #3C2A21;
+  /* background: #3C2A21; */
   height: 80px;
   /*display: flex;*/
   background-color: transparent;
@@ -19,10 +15,12 @@ html {
   padding: 0px;
   text-align: center;
   /*display: inline-block;*/
+  background-color: white;
   vertical-align: top;
   position: fixed;
-  left: 40%;
+  left: 0%;
   z-index: 10;
+  width: 100%;
   margin: 0 auto;
 }
 

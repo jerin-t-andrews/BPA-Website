@@ -19,7 +19,7 @@ const HomePage = () => {
             
                 <div className='homedivider'></div>
 
-            <Parallax strength={500} bgImage={luxury}>
+            <Parallax strength={400} bgImage={luxury}>
                 <div className='content'>
                 <div className='text-content'>
                     <h1>Luxury</h1>
@@ -31,7 +31,7 @@ const HomePage = () => {
 
             <div className='homedivider'></div>
 
-            <Parallax strength={500} bgImage={newcars}>
+            <Parallax strength={400} bgImage={newcars}>
                 <div className='content'>
                 <div className='text-content'>
                     <h1>New</h1>
@@ -45,7 +45,7 @@ const HomePage = () => {
 
             <div className='homedivider'></div>
 
-            <Parallax strength={500} bgImage={used}>
+            <Parallax strength={400} bgImage={used}>
                 <div className='content'>
                 <div className='text-content'>
                     <h1>Used</h1>
