@@ -2,6 +2,11 @@ html {
   height: 100%;
 }
 
+.ListPage, .ContactPage {
+  padding-top: 90px;
+}
+
+
 .navbar {
   /* background: #3C2A21; */
   max-height: 100px;
@@ -15,7 +20,7 @@ html {
   padding: 0px;
   text-align: center;
   /*display: inline-block;*/
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   vertical-align: top;
   position: fixed;
   left: 0%;
@@ -233,4 +238,10 @@ table {
 .carList img {
   height: 20vh;
   margin: 0;
+}
+
+.ChatWindow {
+  position: fixed;
+  transform: translate(100vw, 100vh);
+  z-index: 10;
 }

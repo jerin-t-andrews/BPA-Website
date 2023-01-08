@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import styled from "styled-components";
+import styled from "styled-components-new";
 
 // npm i @emailjs/browser
 
@@ -33,16 +33,19 @@ const Contact_new = () => {
 
     return (
         <StyledContactForm>
-        <form ref={form} onSubmit={sendEmail} >
-            <label>Name</label>
-            <input type="text" name="user_name" id="user_name"/>
-            <label>Email</label>
-            <input type="email" name="user_email" id="user_email"/>
-            <label>Message</label>
-            <textarea name="message" id="message"/>
-            <input type="submit" value="Send"/>
-        </form>
+        <div className="ContactPage">
+            <form ref={form} onSubmit={sendEmail} >
+                <label>Name</label>
+                <input type="text" name="user_name" id="user_name"/>
+                <label>Email</label>
+                <input type="email" name="user_email" id="user_email"/>
+                <label>Message</label>
+                <textarea name="message" id="message"/>
+                <input type="submit" value="Send"/>
+            </form>
+        </div>
         </StyledContactForm>
+        
     );
 };
 

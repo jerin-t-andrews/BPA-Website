@@ -17,7 +17,7 @@ function App() {
           <Route element={<HomePage/>} path="/" exact/>
           <Route element={<CarList/>} path="/CarList" exact/>
           <Route element={<CarPage/>} path="/CarPage" exact/> 
-          {/* This route will need to be updated, since the url will be a search query result */}
+          {/* This route will need to be updated, since the url will be a search query */}
           <Route element={<Contact/>} path="/Contact" exact/>
         </Routes>
       </Router>

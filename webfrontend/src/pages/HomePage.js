@@ -3,23 +3,25 @@ import { Parallax } from 'react-parallax';
 import luxury from '../car-images/new-luxury2.jpg';
 import used from '../car-images/new-new-used2.jpg';
 import newcars from '../car-images/new-new.jpg';
+// import transcar from '../car-images/Audi-4K-PNG.png'
+// import { Parallax as P, ParallaxLayer} from '@react-spring/parallax'
 import { Link } from 'react-router-dom'
-
+import ChatBot from '../components/ChatBot'
 
 const HomePage = () => {
-    
     return (
         <div className="Home">
-            
-                <div className='content'>
+            <ChatBot/>
+
+            <div className='content'>
                 <div className='logo-content'>
                     Caravelle - Elevate your Drive
                 </div>
-                </div>
+            </div>
             
-                <div className='homedivider'></div>
+            <div className='homedivider'></div>
 
-            <Parallax strength={400} bgImage={luxury}>
+            <Parallax strength={200} bgImage={luxury}>
                 <div className='content'>
                 <div className='text-content'>
                     <h1>Luxury</h1>
