@@ -45,72 +45,68 @@ const CarPage = () => {
     return (
         <div className='carPage'>
             <img src='https://img2.carmax.com/assets/23223430/hero.jpg?width=800&height=450'/>
-            <div className='carPicture'>
-                <Parallax strength={200} bgImage={location.state.path}>
-                    <div className='content'>
-                        <div className='text-content'>
-                            <h1>{location.state.make} {location.state.model}</h1>
-                            <p>{location.state.year}</p>
-                        </div>
-                    </div>
-                </Parallax>
-            </div>
-            <br/>
-            <br/>
-            <h1>Car Specs</h1>
-            <br/>
-            <br/>
-            <table>
-                <tr>
-                    <td>
-                        <img src={location.state.path} alt='interiorpic'/>
-                    </td>
-                    <td>
-                        <p><strong>Make: </strong> {location.state.make}</p>
-                        <p><strong>Model: </strong> {location.state.model}</p>
-                        <p><strong>Year: </strong> {location.state.year}</p>
-                        <p><strong>Build: </strong> Placeholder</p>
-                        <p><strong>Quality: </strong> Placeholder</p>
-                        <p><strong>Mileage: </strong> Placeholder</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <h1>Loan Estimator</h1>
-                        <table className='estimatorTable'>
-                            <tr>
-                                <td>
-                                    <p>Price</p>
-                                    <input readOnly='true' className='estimator' type="number" name="price" id="Price" placeholder= {location.state.price}/>
-                                    <p>Down Payment</p>
-                                    <input value={sDP} onChange={e=>setDP(e.target.value)}  className='estimator' type="number" name="down_payment" id="user_name" placeholder="Make this 20% of price"/>
-                                    <p>Loan Term</p>
-                                    <input value={sLoan} onChange={e=>setLoan(e.target.value)}  className='estimator' type="number" name="loan_term" id="loan_term" placeholder="72 Months"/>
-                                    <p>Credit Score</p>
-                                    <select value={sCredit} onChange={e=>setCredit(e.target.value)} className='estimator' type="number" name="credit_score" id="credit_score">
+            <div className='carPage-content'>
+                <div className='car-text-content'>
+                    <h1>{location.state.make} {location.state.model}</h1>
+                    <p>{location.state.year}</p>
+                </div>
+                <br/>
+                <br/>
+                <h1>Car Specs</h1>
+                <br/>
+                <br/>
+                <table>
+                    <tr>
+                        <td>
+                            <img src={location.state.path} alt='interiorpic'/>
+                        </td>
+                        <td>
+                            <p><strong>Make: </strong> {location.state.make}</p>
+                            <p><strong>Model: </strong> {location.state.model}</p>
+                            <p><strong>Year: </strong> {location.state.year}</p>
+                            <p><strong>Build: </strong> Placeholder</p>
+                            <p><strong>Quality: </strong> Placeholder</p>
+                            <p><strong>Mileage: </strong> Placeholder</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h1>Loan Estimator</h1>
+                            <table className='estimatorTable'>
+                                <tr>
+                                    <td>
+                                        <p>Price</p>
+                                        <input readOnly='true' className='estimator' type="number" name="price" id="Price" placeholder= {location.state.price}/>
+                                        <p>Down Payment</p>
+                                        <input value={sDP} onChange={e=>setDP(e.target.value)}  className='estimator' type="number" name="down_payment" id="user_name" placeholder="Make this 20% of price"/>
+                                        <p>Loan Term</p>
+                                        <input value={sLoan} onChange={e=>setLoan(e.target.value)}  className='estimator' type="number" name="loan_term" id="loan_term" placeholder="72 Months"/>
+                                        <p>Credit Score</p>
+                                        <select value={sCredit} onChange={e=>setCredit(e.target.value)} className='estimator' type="number" name="credit_score" id="credit_score">
                                         <option>None</option>
                                         {credits.map(credit => {
                                             return <option key={credit.interest} value={credit.interest}>{credit.credit_score}</option>
                                         })}
                                     </select>
-                                </td>
-                                <td>
-                                    <h1>Calculated Price</h1>
-                                    <p>${Math.round(((calculate(location.state.price, sDP, sLoan, sCredit))+ Number.EPSILON) * 100) / 100}/month</p>
-                                </td>
-                            </tr>
-                        </table>
-                        <br/>
-                        <br/>
-                        <Link to="/Contact" className='ConLink'>
-                            <button type='button' className='btn'>Request a Quote</button>
-                        </Link>
-                    </td>
-                    <td>
-                        <img src={location.state.path} alt='extraexteriorpic'/>
-                    </td>
-                </tr>
-            </table>
+                                    </td>
+                                    <td>
+                                        <h1>Calculated Price</h1>
+                                        <p>${Math.round(((calculate(location.state.price, sDP, sLoan, sCredit))+ Number.EPSILON) * 100) / 100}/month</p>
+                                    </td>
+                                </tr>
+                            </table>
+                            <br/>
+                            <br/>
+                            <Link to="/Contact" className='ConLink'>
+                                <button type='button' className='btn'>Request a Quote</button>
+                            </Link>
+                        </td>
+                        <td>
+                            <img src={location.state.path} alt='extraexteriorpic'/>
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </div>
     )
 }
