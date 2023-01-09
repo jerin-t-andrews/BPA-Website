@@ -5,7 +5,11 @@
         "model": "Camry",
         "year": 1994,
         "path": "../car-list-images/luxury.jpg",
-        "price": 30000
+        "price": 30000,
+        "build": "sedan",
+        "type": "regular",
+        "mileage": 200000,
+        "range": "0-5000"
     },
     {
         "id": 2,
@@ -13,7 +17,11 @@
         "model": "Corolla",
         "year": 2015,
         "path": "../car-list-images/luxury.jpg",
-        "price": 30000
+        "price": 30000,
+        "build": "sedan",
+        "type": "luxury",
+        "mileage": 234021,
+        "range": "0-5000"
     },
     {
         "id": 3,
@@ -21,7 +29,11 @@
         "model": "Hatchback",
         "year": 2015,
         "path": "../car-list-images/luxury.jpg",
-        "price": 30000
+        "price": 30000,
+        "build": "sedan",
+        "type": "regular",
+        "mileage": 234021,
+        "range": "0-5000"
     },
     {
         "id": 4,
@@ -29,7 +41,11 @@
         "model": "Supra",
         "year": 2015,
         "path": "../car-list-images/luxury.jpg",
-        "price": 30000
+        "price": 30000,
+        "build": "coupe",
+        "type": "regular",
+        "mileage": 234021,
+        "range": "5000-25000"
     },
     {
         "id": 5,
@@ -37,6 +53,10 @@
         "model": "Camry Hybrid",
         "year": 2015,
         "path": "../car-list-images/luxury.jpg",
-        "price": 30000
+        "price": 30000,
+        "build": "coupe",
+        "type": "luxury",
+        "mileage": 234021,
+        "range": "0-5000"
     }
 ]

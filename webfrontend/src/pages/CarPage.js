@@ -44,7 +44,7 @@ const CarPage = () => {
     
     return (
         <div className='carPage'>
-            <img src='https://img2.carmax.com/assets/23223430/hero.jpg?width=800&height=450'/>
+            {/* <img src='https://img2.carmax.com/assets/23223430/hero.jpg?width=800&height=450'/> */}
             <div className='carPage-content'>
                 <div className='car-text-content'>
                     <h1>{location.state.make} {location.state.model}</h1>

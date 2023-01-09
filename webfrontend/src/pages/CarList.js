@@ -9,6 +9,18 @@ const CarList = () => {
     const [selectMake, setMake] = useState("");
     const [selectModel, setModel] = useState("");
     const [selectYear, setYear] = useState("");
+    const [selectBuild, setBuild] = useState("");
+    const [selectType, setType] = useState("");
+    const [selectMile, setMile] = useState("");
+
+    const mileages = [
+        "0-5000",
+        "5000-25000",
+        "25000-50000",
+        "50000-100000",
+        "100000-200000",
+        "200000+"
+    ]
 
     if(selectMake === "None") {
         setMake("");
@@ -22,6 +34,18 @@ const CarList = () => {
         setYear("");
     }
 
+    if(selectBuild === "None") {
+        setBuild("");
+    }
+
+    if(selectType === "None") {
+        setType("");
+    }
+
+    if(selectMile === "None") {
+        setMile("");
+    }
+
     const carMakes = new Set(data_.map((car) => {
         return car.make
     }))
@@ -33,6 +57,18 @@ const CarList = () => {
     const carYears = new Set(data_.map((car) => {
         return car.year
     }))
+
+    const carBuilds = new Set(data_.map((car) => {
+        return car.build
+    }))
+
+    const carTypes = new Set(data_.map((car) => {
+        return car.type
+    }))
+
+    const iRange = (x, min, max) => {
+        return x >= min && x <= max;
+    }
 
     return (
         <div className="ListPage">
@@ -65,8 +101,26 @@ const CarList = () => {
                             })}
                         </select>
                         <h2>Select Build</h2>
+                        <select value={selectBuild} onChange={e=>setBuild(e.target.value)}>
+                            <option>None</option>
+                            {Array.from(carBuilds).map((build) => {
+                                return <option key={build} value={build}> {build} </option>
+                            })}
+                        </select>
                         <h2>Select Type</h2>
-                        <h2>Select Price</h2>
+                        <select value={selectType} onChange={e=>setType(e.target.value)}>
+                            <option>None</option>
+                            {Array.from(carTypes).map((type) => {
+                                return <option key={type} value={type}> {type} </option>
+                            })}
+                        </select>        
+                        <h2>Mileage Range</h2>
+                        <select value={selectMile} onChange={e=>setMile(e.target.value)}>
+                            <option>None</option>
+                            {mileages.map((t) => {
+                                return <option key={t} value={t}> {t} </option>
+                            })}
+                        </select>                        
                     </div>
                 </div>
             </div>
@@ -75,7 +129,9 @@ const CarList = () => {
 
             {/* car => (car.make.match(selectMake)) */}
             <div className='carList'>
-                {data_.filter(car => (car.make.match(selectMake) && car.model.match(selectModel) && car.year.toString().match(selectYear))).map(filteredCar=> (
+                {data_.filter(car => (car.make.match(selectMake) && car.model.match(selectModel) && car.year.toString().match(selectYear) && car.build.match(selectBuild) && car.type.match(selectType)
+                && car.range.match(selectMile))
+                ).map(filteredCar=> (
                     <div className="product justify-content-center">
                 
                         <div className='product-image'>
@@ -88,15 +144,15 @@ const CarList = () => {
                             <p><strong>Make: </strong> {filteredCar.make}</p>
                             <p><strong>Model: </strong> {filteredCar.model}</p>
                             <p><strong>Year: </strong> {filteredCar.year}</p>
-                            <p><strong>Build: </strong> Placeholder</p>
-                            <p><strong>Quality: </strong> Placeholder</p>
-                            <p><strong>Mileage: </strong> Placeholder</p>
+                            <p><strong>Build: </strong> {filteredCar.build}</p>
+                            <p><strong>Quality: </strong> {filteredCar.type}</p>
+                            <p><strong>Mileage: </strong> {filteredCar.mileage}</p>
                         </div>
                     
                         <div className="product-price">
                             <h1>${filteredCar.price}</h1>
                             <br/>
-                        <button onClick={() => {navigate('/CarPage', {state:{id: filteredCar.id, make: filteredCar.make, model: filteredCar.model, year: filteredCar.year, path: filteredCar.path, price: filteredCar.price}})}} type='button' className='btn'>View</button>
+                        <button onClick={() => {navigate('/CarPage', {state:{id: filteredCar.id, make: filteredCar.make, model: filteredCar.model, year: filteredCar.year, path: filteredCar.path, price: filteredCar.price, mileage: filteredCar.mileage}})}} type='button' className='btn'>View</button>
                         </div>
                     
                     </div>
