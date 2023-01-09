@@ -33,7 +33,9 @@ const HomePage = () => {
                         <p>Travel in style</p>
                     </div>
                 </div>
-                <button type='button' className='btn'>Shop Now</button>
+                <Link to="/CarList" className='ConLink'>
+                    <button type='button' className='btn'>Shop Now</button>
+                </Link>
                 </div>
             </Parallax>
 
@@ -48,7 +50,9 @@ const HomePage = () => {
                     </div>
                 </div>
 
-                <button type='button' className='btn'>Shop Now</button>
+                <Link to="/CarList" className='ConLink'>
+                    <button type='button' className='btn'>Shop Now</button>
+                </Link>
 
                 </div>
             </Parallax>
@@ -64,7 +68,9 @@ const HomePage = () => {
                     </div>
                 </div>
 
-                <button type='button' className='btn'>Shop Now</button>
+                <Link to="/CarList" className='ConLink'>
+                    <button type='button' className='btn'>Shop Now</button>
+                </Link>
 
                 <table className='aboutTable'>
                     <tr>
@@ -72,7 +78,6 @@ const HomePage = () => {
                         <Link to="/Contact" className='ConLink'>
                             <th>Contact</th>
                         </Link>
-                        <th>Sources</th>
                     </tr>
                 </table>
                 

@@ -65,7 +65,27 @@ const Contact_new = () => {
                             </form>
                         </th>
                         <th>
-                        <img id="contactpic" src="../car-list-images/luxury.jpg" alt='test'/>
+                            <img id="contactpic" src="../car-list-images/luxury.jpg" alt='test'/>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <h1>Hours of Operation:</h1>
+                            
+                            <p><strong>Sunday: </strong>Closed</p>
+                            <p><strong>Monday: </strong>9AM-5PM</p>
+                            <p><strong>Tuesday: </strong>9AM-5PM</p>
+                            <p><strong>Wednesday: </strong>9AM-5PM</p>
+                            <p><strong>Thursday: </strong>9AM-5PM</p>
+                            <p><strong>Friday: </strong>9AM-5PM</p>
+                            <p><strong>Saturday: </strong>Closed</p>
+                        
+                        </th>
+                        <th>
+                        <h1>Links to Representatives:</h1>
+                            
+                            <p><strong>Email: </strong>caravelleauto@gmail.com</p>
+                            <p><strong>Telephone: </strong>(972) 277-1889</p>
                         </th>
                     </tr>
                 </table>
