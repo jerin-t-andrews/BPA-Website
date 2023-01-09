@@ -232,7 +232,7 @@ table {
   width: 15vw;
   /* height: 20vh; */
   position: fixed;
-  transform: translate(2vw, 30vh);
+  transform: translate(2vw, 20vh);
   z-index: 15;
   box-shadow: 1px 2px 23px 9px rgba(0,0,0,0.75);
   -webkit-box-shadow: 1px 2px 23px 9px rgba(0,0,0,0.75);
