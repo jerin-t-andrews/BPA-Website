@@ -8,29 +8,29 @@
     },
     {
         "id": 2,
-        "model": "Toyota",
-        "make": "Corolla",
+        "make": "Toyota",
+        "model": "Corolla",
         "year": 2015,
         "path": "../car-list-images/luxury.jpg"
     },
     {
         "id": 3,
-        "model": "Toyota",
-        "make": "Hatchback",
+        "make": "Toyota",
+        "model": "Hatchback",
         "year": 2015,
         "path": "../car-list-images/luxury.jpg"
     },
     {
         "id": 4,
-        "model": "Toyota",
-        "make": "Supra",
+        "make": "Honda",
+        "model": "Supra",
         "year": 2015,
         "path": "../car-list-images/luxury.jpg"
     },
     {
         "id": 5,
-        "model": "Toyota",
-        "make": "Camry Hybrid",
+        "make": "Honda",
+        "model": "Camry Hybrid",
         "year": 2015,
         "path": "../car-list-images/luxury.jpg"
     }

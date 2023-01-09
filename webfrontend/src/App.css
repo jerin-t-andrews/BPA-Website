@@ -208,7 +208,7 @@ table {
 }
 
 .options h1 {
-  position: absolute;
+  position: fixed;
   bottom: 20vh;
 }
 
