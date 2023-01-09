@@ -1,7 +1,7 @@
 import React from 'react'
 import { Parallax } from 'react-parallax';
 import luxury from '../car-images/Lexus.jpg';
-import used from '../car-images/audi.jpg';
+import used from '../car-images/toyota.jpg';
 import newcars from '../car-images/Audi.webp';
 // import transcar from '../car-images/Audi-4K-PNG.png'
 // import { Parallax as P, ParallaxLayer} from '@react-spring/parallax'
@@ -55,7 +55,7 @@ const HomePage = () => {
 
             <div className='homedivider'></div>
 
-            <Parallax strength={400} bgImage={used}>
+            <Parallax strength={200} bgImage={used}>
                 <div className='content'>
                 <div className='text-content'>
                     <div className='usedInfo'>
