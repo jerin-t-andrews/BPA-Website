@@ -65,7 +65,18 @@ const Contact_new = () => {
                             </form>
                         </th>
                         <th>
-                            <img id="contactpic" src="../car-list-images/luxury.jpg" alt='test'/>
+                            <p style={{'font-size': 'larger'}}>BPA INFO</p>
+                            <br/>
+                            <p>02-1144</p>
+                            <p>Robert Tezock, Noble Mathew, Ethan Siao, Jerin Andrews</p>
+                            <p>Car Lot Website</p>
+                            <p>Sunnyvalie High School</p>
+                            <p>Sunnyvale</p>
+                            <p>Texas </p>
+                            <p>2023 </p>
+
+
+
                         </th>
                     </tr>
                     <tr>
