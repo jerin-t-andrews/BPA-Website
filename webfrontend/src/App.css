@@ -158,13 +158,13 @@ body {
   height: 10px;
 }
 
-h1 {
+/* h1 {
   color: black;
 }
 
 p {
   color: black;
-}
+} */
 
 .about-table {
   color: black;
@@ -369,4 +369,12 @@ header {
 
 .new-text {
   color: white;
+}
+
+.usedInfo {
+  color:white
+}
+
+.luxuryInfo {
+  color: black
 }

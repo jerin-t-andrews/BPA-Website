@@ -28,8 +28,10 @@ const HomePage = () => {
             <Parallax strength={200} bgImage={luxury}>
                 <div className='content'>
                 <div className='text-content'>
-                    <h1>Luxury</h1>
-                    <p>Travel in style</p>
+                    <div className='luxuryInfo'>
+                        <h1>Luxury</h1>
+                        <p>Travel in style</p>
+                    </div>
                 </div>
                 <button type='button' className='btn'>Shop Now</button>
                 </div>
