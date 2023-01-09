@@ -190,6 +190,8 @@ table {
   position: relative;
   top: 90%;
   color: white;
+  background-color: black;
+  border-radius: 1vw;
 }
 
 .options {
@@ -281,7 +283,7 @@ header {
 }
 
 .carPicture {
-  width: 60vw;
+  width: 90vw;
   margin: 0 auto;
 }
 
@@ -342,6 +344,7 @@ header {
 
 .carPage img {
   width: 40vw;
+  border-radius: 2vw;
 }
 
 .product-price {
@@ -378,4 +381,23 @@ header {
   display: none;
   overflow: hidden;
   background-color: #f1f1f1;
+}
+
+.carPage p {
+  font-size: 200%;
+  position: relative;
+}
+
+.estimator {
+  display: block;
+  margin: 0 auto;
+}
+
+.estimatorTable p {
+  font-size: 150%;
+}
+
+.estimatorTable {
+  width: 30vw;
+  margin: 2vh auto;
 }
