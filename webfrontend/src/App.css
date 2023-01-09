@@ -232,6 +232,10 @@ table {
 .contactForm {
   height: 100vh;
   background-image: url('./car-images/new-new.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .carList {
@@ -274,6 +278,11 @@ header {
 
 .main-content {
   margin-top: 2rem;
+}
+
+.carPicture {
+  width: 60vw;
+  margin: 0 auto;
 }
 
 .product {
@@ -329,6 +338,10 @@ header {
   position: fixed;
   transform: translate(100vw, 100vh);
   z-index: 10;
+}
+
+.carPage img {
+  width: 40vw;
 }
 
 .product-price {
