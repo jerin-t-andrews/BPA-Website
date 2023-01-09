@@ -1,8 +1,8 @@
 [
     {
         "id": 1,
-        "model": "Toyota",
-        "make": "Camry",
+        "make": "Toyota",
+        "model": "Camry",
         "year": 1994,
         "path": "../car-list-images/luxury.jpg" 
     },
