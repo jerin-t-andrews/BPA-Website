@@ -8,8 +8,7 @@ html {
   /*display: flex;*/
   background-color: transparent;
   /*margin: 0 auto;*/
-  width: 100%;
-  
+  width: 100%;  
 }
 
 .navbar table {
@@ -195,7 +194,7 @@ h2 {
 
 .carPage p {
   font-family: 'Playfair Display', serif;
-} */
+} 
 
 .about-table {
   color: black;
