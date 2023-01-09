@@ -1,8 +1,8 @@
 import React from 'react'
 import { Parallax } from 'react-parallax';
-import luxury from '../car-images/new-luxury2.jpg';
-import used from '../car-images/new-new-used2.jpg';
-import newcars from '../car-images/new-new.jpg';
+import luxury from '../car-images/Lexus.jpg';
+import used from '../car-images/toyota.jpg';
+import newcars from '../car-images/Audi.webp';
 // import transcar from '../car-images/Audi-4K-PNG.png'
 // import { Parallax as P, ParallaxLayer} from '@react-spring/parallax'
 import { Link } from 'react-router-dom'
@@ -28,8 +28,10 @@ const HomePage = () => {
             <Parallax strength={200} bgImage={luxury}>
                 <div className='content'>
                 <div className='text-content'>
-                    <h1>Luxury</h1>
-                    <p>Travel in style</p>
+                    <div className='luxuryInfo'>
+                        <h1>Luxury</h1>
+                        <p>Travel in style</p>
+                    </div>
                 </div>
                 <button type='button' className='btn'>Shop Now</button>
                 </div>
@@ -40,8 +42,10 @@ const HomePage = () => {
             <Parallax strength={400} bgImage={newcars}>
                 <div className='content'>
                 <div className='text-content'>
-                    <h1>New</h1>
-                    <p>Keeping it modern</p>
+                    <div className="new-text">
+                        <h1>New</h1>
+                        <p>Keeping it modern</p>
+                    </div>
                 </div>
 
                 <button type='button' className='btn'>Shop Now</button>
@@ -51,12 +55,13 @@ const HomePage = () => {
 
             <div className='homedivider'></div>
 
-            <Parallax strength={400} bgImage={used}>
+            <Parallax strength={200} bgImage={used}>
                 <div className='content'>
                 <div className='text-content'>
-                    <h1>Used</h1>
-                    
-                    <p>Exploration on a budget</p>
+                    <div className='usedInfo'>
+                        <h1>Used</h1>
+                        <p>Exploration on a budget</p>
+                    </div>
                 </div>
 
                 <button type='button' className='btn'>Shop Now</button>
@@ -73,17 +78,6 @@ const HomePage = () => {
                 
                 </div>
             </Parallax>
-                {/*
-                <div className='about'>
-                <table>
-                    <tr>
-                        <th>Caravelle</th>
-                        <th>Contact</th>
-                        <th>Sources</th>
-                    </tr>
-                </table>
-                </div>
-    */}
         </div>
 
         
