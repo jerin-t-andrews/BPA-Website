@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/BPA-Website/static/css/main.82d3b26e.css",
-    "main.js": "/BPA-Website/static/js/main.b7bbe834.js",
+    "main.js": "/BPA-Website/static/js/main.e90cb04e.js",
     "static/js/787.d7bf8325.chunk.js": "/BPA-Website/static/js/787.d7bf8325.chunk.js",
     "static/media/toyota.jpg": "/BPA-Website/static/media/toyota.33868a4b5e9f07ce1465.jpg",
     "static/media/Lexus.jpg": "/BPA-Website/static/media/Lexus.0e1e19423041814fb444.jpg",
@@ -10,11 +10,11 @@
     "static/media/caravellecut.png": "/BPA-Website/static/media/caravellecut.8c4c044ebe9aee00cfb7.png",
     "index.html": "/BPA-Website/index.html",
     "main.82d3b26e.css.map": "/BPA-Website/static/css/main.82d3b26e.css.map",
-    "main.b7bbe834.js.map": "/BPA-Website/static/js/main.b7bbe834.js.map",
+    "main.e90cb04e.js.map": "/BPA-Website/static/js/main.e90cb04e.js.map",
     "787.d7bf8325.chunk.js.map": "/BPA-Website/static/js/787.d7bf8325.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.82d3b26e.css",
-    "static/js/main.b7bbe834.js"
+    "static/js/main.e90cb04e.js"
   ]
 }
