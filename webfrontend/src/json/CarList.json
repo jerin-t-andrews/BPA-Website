@@ -4,34 +4,39 @@
         "make": "Toyota",
         "model": "Camry",
         "year": 1994,
-        "path": "../car-list-images/luxury.jpg"
+        "path": "../car-list-images/luxury.jpg",
+        "price": 30000
     },
     {
         "id": 2,
         "make": "Toyota",
         "model": "Corolla",
         "year": 2015,
-        "path": "../car-list-images/luxury.jpg"
+        "path": "../car-list-images/luxury.jpg",
+        "price": 30000
     },
     {
         "id": 3,
         "make": "Toyota",
         "model": "Hatchback",
         "year": 2015,
-        "path": "../car-list-images/luxury.jpg"
+        "path": "../car-list-images/luxury.jpg",
+        "price": 30000
     },
     {
         "id": 4,
         "make": "Honda",
         "model": "Supra",
         "year": 2015,
-        "path": "../car-list-images/luxury.jpg"
+        "path": "../car-list-images/luxury.jpg",
+        "price": 30000
     },
     {
         "id": 5,
         "make": "Honda",
         "model": "Camry Hybrid",
         "year": 2015,
-        "path": "../car-list-images/luxury.jpg"
+        "path": "../car-list-images/luxury.jpg",
+        "price": 30000
     }
 ]

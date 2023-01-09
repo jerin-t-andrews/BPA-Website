@@ -94,9 +94,9 @@ const CarList = () => {
                         </div>
                     
                         <div className="product-price">
-                            <h1>$19.99</h1>
+                            <h1>${filteredCar.price}</h1>
                             <br/>
-                        <button onClick={() => {navigate('/CarPage', {state:{id: filteredCar.id, make: filteredCar.make, model: filteredCar.model, year: filteredCar.year, path: filteredCar.path}})}} type='button' className='btn'>View</button>
+                        <button onClick={() => {navigate('/CarPage', {state:{id: filteredCar.id, make: filteredCar.make, model: filteredCar.model, year: filteredCar.year, path: filteredCar.path, price: filteredCar.price}})}} type='button' className='btn'>View</button>
                         </div>
                     
                     </div>

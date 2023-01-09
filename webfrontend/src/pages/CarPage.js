@@ -6,10 +6,10 @@ import { Link } from 'react-router-dom'
 const CarPage = () => {
     const location = useLocation();
 
-    let [sPrice, setPrice] = useState();
-    let [sDP, setDP] = useState();
-    let [sLoan, setLoan] = useState();
-    let [sCredit, setCredit] = useState();
+    // let [sPrice, setPrice] = useState();
+    let [sDP, setDP] = useState(0);
+    let [sLoan, setLoan] = useState(12);
+    let [sCredit, setCredit] = useState(.0661);
 
     function calculate(price, dp, loan, credit) {
         var x = price-dp;
@@ -44,6 +44,7 @@ const CarPage = () => {
     
     return (
         <div className='carPage'>
+            <img src='https://img2.carmax.com/assets/23223430/hero.jpg?width=800&height=450'/>
             <div className='carPicture'>
                 <Parallax strength={200} bgImage={location.state.path}>
                     <div className='content'>
@@ -80,7 +81,7 @@ const CarPage = () => {
                             <tr>
                                 <td>
                                     <p>Price</p>
-                                    <input value={sPrice} onChange={e=>setPrice(e.target.value)} className='estimator' type="number" name="price" id="Price" placeholder="Change this to price"/>
+                                    <input readOnly='true' className='estimator' type="number" name="price" id="Price" placeholder= {location.state.price}/>
                                     <p>Down Payment</p>
                                     <input value={sDP} onChange={e=>setDP(e.target.value)}  className='estimator' type="number" name="down_payment" id="user_name" placeholder="Make this 20% of price"/>
                                     <p>Loan Term</p>
@@ -95,7 +96,7 @@ const CarPage = () => {
                                 </td>
                                 <td>
                                     <h1>Calculated Price</h1>
-                                    <p>$ {calculate(sPrice, sDP, sLoan, sCredit)}</p>
+                                    <p>${Math.round(((calculate(location.state.price, sDP, sLoan, sCredit))+ Number.EPSILON) * 100) / 100}/month</p>
                                 </td>
                             </tr>
                         </table>
