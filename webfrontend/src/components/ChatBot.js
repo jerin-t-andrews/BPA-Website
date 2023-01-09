@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import ChatBotObject from 'react-simple-chatbot'
 import { ThemeProvider } from 'styled-components'
+import { Link } from 'react-router-dom'
 
 class ChatBot extends Component {
     state = {
@@ -29,14 +30,22 @@ class ChatBot extends Component {
             {
                 id: '3',
                 component: (
-                    <div></div>
-                ),
+                    <div>The shope accessible here: 
+                        <Link to='/CarList'><p>Shop For Cars</p></Link>
+                    </div>
+                ), 
                 // message: 'Here is a link to the shop, in the shop you can filter through the various car options and view a variety of car models',
                 trigger: '5'
             },
             {
                 id: '4',
-                message: 'To contact a representative, either go to the contact page or contact either caravelleauto.gmail.com or (972) 277-1889',
+                component: (
+                    <div>
+                        Here is a link to our Contact Page:
+                        <Link to='/Contact'><p>Contact Representative</p></Link>
+                    </div>
+                ),
+                // message: 'To contact a representative, either go to the contact page or contact either caravelleauto.gmail.com or (972) 277-1889',
                 trigger: '5'
             },
             {
