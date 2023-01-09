@@ -4,6 +4,7 @@ import luxury from '../car-images/new-luxury2.jpg';
 import used from '../car-images/new-new-used2.jpg';
 import newcars from '../car-images/new-new.jpg';
 import { Link } from 'react-router-dom'
+import logo_ from '../components/caravellecut.png'
 
 
 const HomePage = () => {
@@ -13,8 +14,10 @@ const HomePage = () => {
             
                 <div className='content'>
                 <div className='logo-content'>
-                    Caravelle - Elevate your Drive
-                </div>
+                    <h1>Caravelle</h1>
+                    <img className='homeLogo' src={logo_} alt='logopng'/>
+                    <p>Elevate your Drive</p>  
+              </div>
                 </div>
             
                 <div className='homedivider'></div>

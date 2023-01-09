@@ -32,16 +32,45 @@ const Contact_new = () => {
     };
 
     return (
+
         <StyledContactForm>
-        <form ref={form} onSubmit={sendEmail} >
-            <label>Name</label>
-            <input type="text" name="user_name" id="user_name"/>
-            <label>Email</label>
-            <input type="email" name="user_email" id="user_email"/>
-            <label>Message</label>
-            <textarea name="message" id="message"/>
-            <input type="submit" value="Send"/>
-        </form>
+            <div className="contactForm">
+                {/* <p>test</p>
+                <p>test</p>
+                <p>test</p>
+                <p>test</p>
+                <p>test</p>
+                <p>test</p>
+                <p>test</p>
+                <p>test</p>
+                <p>test</p>
+                <p>test</p>
+                <p>test</p>
+                <p>test</p> */}
+                {/* <img src="../car-list-images/luxury.jpg" alt='test'></img> */}
+                
+                <table className="contactTable">
+                    <tr>
+                        <th>
+                            <h1>Get In Touch</h1>
+                            <hr/>
+                            <form ref={form} onSubmit={sendEmail} >
+                                <br/>
+                                <input type="text" name="user_name" id="user_name" placeholder="Name"/>
+                                <br/>
+                                <input type="email" name="user_email" id="user_email" placeholder="Email"/>
+                                <br/>
+                                <textarea name="message" id="message" placeholder="Type your message here"/>
+                                <input type="submit" value="Send" className="btn sendContact"/>
+                            </form>
+                        </th>
+                        <th>
+                        <img id="contactpic" src="../car-list-images/luxury.jpg" alt='test'/>
+                        </th>
+                    </tr>
+                </table>
+                
+            </div>
         </StyledContactForm>
     );
 };
@@ -57,12 +86,12 @@ export default Contact_new;
 
 // Styles
 const StyledContactForm = styled.div`
-    width: 400px;
+    width: 100vw;
     form {
         display: flex;
         align-items: flex-start;
         flex-direction: column;
-        width: 100%;
+        width: 30vw;
         font-size: 16px;
         input {
         width: 100%;
@@ -95,9 +124,9 @@ const StyledContactForm = styled.div`
         input[type="submit"] {
         margin-top: 2rem;
         cursor: pointer;
-        background: rgb(249, 105, 14);
         color: white;
         border: none;
         }
+
     }
 `;

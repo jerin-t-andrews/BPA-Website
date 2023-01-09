@@ -84,6 +84,10 @@ html {
   height: 100vh;
 }
 
+.homeLogo {
+  height: 30vh;
+}
+
 .text-content {
   position: absolute;
   top: 30%;
@@ -102,7 +106,6 @@ html {
   left: 50%;
   padding: 5px 15px;
   transform: translate(-50%, -50%);
-  background: gray;
   color: white;
   border-radius: 20px;
   font-size: 50px;
@@ -135,7 +138,8 @@ body {
   color: #ffffff;
   font-size: 20px;
   background: #000000;
-  padding: 10px 60px 10px 60px;
+  /* padding: 10px 60px 10px 60px; */
+  padding: .5vw 3vw .5vw 3vw;
   text-decoration: none;
   position: relative;
   right: 0;
@@ -202,6 +206,13 @@ table {
   margin: auto;
 }
 
+#contactpic {
+  width: 30vw;
+  border-radius: 5vw;
+}
+
+
+
 .options h1 {
   position: absolute;
   bottom: 20vh;
@@ -217,8 +228,22 @@ table {
   text-decoration: none;
 }
 
+.contactForm {
+  height: 100vh;
+}
+
 .carList {
   color: black;
+  position: relative;
+  top: 20vh;
+}
+
+.contactTable {
+  position: relative;
+  top: 25vh;
+  box-shadow: 1px 2px 23px 9px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 1px 2px 23px 9px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 2px 23px 9px rgba(0,0,0,0.75);
 }
 
 .carList td {
@@ -233,4 +258,103 @@ table {
 .carList img {
   height: 20vh;
   margin: 0;
+}
+
+.product td {
+  border: none;
+  color: black;
+}
+
+header {
+  padding: 1rem 0;
+}
+
+.main-content {
+  margin-top: 2rem;
+}
+
+.product {
+  border: 1px solid #ccc;
+  border-radius: 1vw;
+  padding: 1rem 0;
+  margin: 1rem auto;
+  text-align: center;
+  width: 60vw;
+  position: relative;
+}
+
+.product img {
+  border-radius: 1vw;
+}
+
+.product div {
+  display: inline-block;
+}
+
+.product h1 {
+  font-size: 100%;
+}
+
+@media only screen and (max-width: 713px) {
+  .product-detail {
+    padding: 0 2rem;
+    width: 30%;
+    position: relative;
+    margin-top: 30px;
+    top: 5vh;
+  }
+  
+  .product-price {
+    font-weight: bold;
+    font-size: 140%;
+    width: 20%;
+    position: relative;
+    margin-top: 50px;
+  }
+
+}
+
+.product-detail {
+  padding: 0 2rem;
+  width: 30%;
+  position: relative;
+  margin-top: 30px;
+  bottom: 5vh;
+  
+}
+
+.product-price {
+  font-weight: bold;
+  font-size: 140%;
+  width: 20%;
+  position: relative;
+  margin-top: 30px;
+  bottom: 5vh;
+}
+
+.product-items {
+  width: 100%;
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapseContent {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
 }
