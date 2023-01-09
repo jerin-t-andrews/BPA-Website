@@ -5,7 +5,6 @@ import CarList from './pages/CarList'
 import Contact from './pages/ContactNew'
 import CarPage from './pages/CarPage'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-//import { Parallax } from 'react-parallax';
 
 
 function App() {

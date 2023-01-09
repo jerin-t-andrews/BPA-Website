@@ -1,7 +1,7 @@
 import React from 'react'
 import { Parallax } from 'react-parallax';
 import luxury from '../car-images/new-luxury2.jpg';
-import used from '../car-images/new-new-used2.jpg';
+import used from '../car-images/audi.jpg';
 import newcars from '../car-images/new-new.jpg';
 // import transcar from '../car-images/Audi-4K-PNG.png'
 // import { Parallax as P, ParallaxLayer} from '@react-spring/parallax'
@@ -54,9 +54,10 @@ const HomePage = () => {
             <Parallax strength={400} bgImage={used}>
                 <div className='content'>
                 <div className='text-content'>
-                    <h1>Used</h1>
-                    
-                    <p>Exploration on a budget</p>
+                    <div className='usedInfo'>
+                        <h1>Used</h1>
+                        <p>Exploration on a budget</p>
+                    </div>
                 </div>
 
                 <button type='button' className='btn'>Shop Now</button>
@@ -73,17 +74,6 @@ const HomePage = () => {
                 
                 </div>
             </Parallax>
-                {/*
-                <div className='about'>
-                <table>
-                    <tr>
-                        <th>Caravelle</th>
-                        <th>Contact</th>
-                        <th>Sources</th>
-                    </tr>
-                </table>
-                </div>
-    */}
         </div>
 
         
