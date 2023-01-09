@@ -9,7 +9,7 @@ const NavBar = () => {
             <table>
                 <tr>
                     <th>
-                        <Link to="/">
+                        <Link to="/BPA-Website">
                             <img className='navLogo' src={logo_} alt='logopng'></img>
                         </Link>
                     </th>
