@@ -4,7 +4,7 @@
         "make": "Toyota",
         "model": "Camry",
         "year": 1994,
-        "path": "../car-list-images/luxury.jpg" 
+        "path": "../car-list-images/luxury.jpg"
     },
     {
         "id": 2,
