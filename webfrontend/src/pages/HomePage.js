@@ -7,6 +7,8 @@ import newcars from '../car-images/new-new.jpg';
 // import { Parallax as P, ParallaxLayer} from '@react-spring/parallax'
 import { Link } from 'react-router-dom'
 import ChatBot from '../components/ChatBot'
+import logo_ from '../components/caravellecut.png'
+
 
 const HomePage = () => {
     return (
@@ -15,7 +17,9 @@ const HomePage = () => {
 
             <div className='content'>
                 <div className='logo-content'>
-                    Caravelle - Elevate your Drive
+                    <h1>Caravelle</h1>
+                    <img className='homeLogo' src={logo_} alt='logopng'/>
+                    <p>Elevate your Drive</p>  
                 </div>
             </div>
             

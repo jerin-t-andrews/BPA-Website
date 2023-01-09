@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import data_ from '../json/CarList.json';
+import 'bootstrap';
 
 
 const CarList = () => {
@@ -33,32 +34,32 @@ const CarList = () => {
                     </select>
                 </div>
             </div>
-
-            <h2>Here: {selectMake} and {selectYear}</h2>
+            <br/>
             <div className='carList'>
-                <table>
-                    {data_.filter(car => (car.make.match(selectMake), car.model.match(selectModel), car.year.toString().match(selectYear))).map((filteredCar, i)=> (
-                        <tr key={i}>
-                            <td><img src={filteredCar.path} alt='carpic'></img></td>
-                            <td><p>{filteredCar.model}</p></td>
-                        </tr>
-                    ))}
-                </table>
+
+                {data_.map((item, i) => (
+                    
+                    <div className="product justify-content-center">
+            
+                        <div className='product-image'>
+                            <img src={item.path} alt="carimg" height="150" />
+                        </div>
+                    
+                        <div className="product-detail">
+                            <h4>{item.model} {item.make}</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    
+                        <div className="product-price">
+                            <h1>$19.99</h1>
+                            <br/>
+                            <button type='button' className='btn'>View</button>
+                        </div>
+                    
+                    </div>
+                        
+                ))}
             </div>
-
-
-            <br></br>
-
-            {/* <div className='carList'>
-                <table>
-                    {data_.map((item, i) => (
-                        <tr key={i}>
-                            <td><img src={item.path} alt='carpic'></img></td>
-                            <td><p>{item.make}</p></td>
-                        </tr>
-    ))}
-                </table>
-            </div> */}
             {/*}
             <img src={data_[1].path} alt="im"/>
             <img src={data_[1].path} alt="im"/>
