@@ -1,10 +1,47 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {useLocation} from 'react-router-dom'
 import { Parallax } from 'react-parallax';
 import { Link } from 'react-router-dom'
 
 const CarPage = () => {
     const location = useLocation();
+
+    let [sPrice, setPrice] = useState();
+    let [sDP, setDP] = useState();
+    let [sLoan, setLoan] = useState();
+    let [sCredit, setCredit] = useState();
+
+    function calculate(price, dp, loan, credit) {
+        var x = price-dp;
+        var monthly_i = ((credit)/loan) * x
+        return monthly_i;
+    }   
+    
+    const credits = [
+        {
+            credit_score: "300-500",
+            interest: .1459
+        },
+        {
+            credit_score: "501-600",
+            interest: .1103
+        },
+        {
+            credit_score: "601-660",
+            interest: .0661
+        },
+        {
+            credit_score: "661-780",
+            interest: .0348
+        },
+        {
+            credit_score: "781-850",
+            interest: .0234
+        }
+    ]
+
+    console.log(sLoan);
+    
     return (
         <div className='carPage'>
             <div className='carPicture'>
@@ -43,17 +80,22 @@ const CarPage = () => {
                             <tr>
                                 <td>
                                     <p>Price</p>
-                                    <input className='estimator' type="number" name="price" id="Price" placeholder="Change this to price"/>
+                                    <input value={sPrice} onChange={e=>setPrice(e.target.value)} className='estimator' type="number" name="price" id="Price" placeholder="Change this to price"/>
                                     <p>Down Payment</p>
-                                    <input className='estimator' type="number" name="down_payment" id="user_name" placeholder="Make this 20% of price"/>
+                                    <input value={sDP} onChange={e=>setDP(e.target.value)}  className='estimator' type="number" name="down_payment" id="user_name" placeholder="Make this 20% of price"/>
                                     <p>Loan Term</p>
-                                    <input className='estimator' type="number" name="loan_term" id="loan_term" placeholder="72 Months"/>
+                                    <input value={sLoan} onChange={e=>setLoan(e.target.value)}  className='estimator' type="number" name="loan_term" id="loan_term" placeholder="72 Months"/>
                                     <p>Credit Score</p>
-                                    <input className='estimator' type="number" name="credit_score" id="credit_score" placeholder="700"/>
+                                    <select value={sCredit} onChange={e=>setCredit(e.target.value)} className='estimator' type="number" name="credit_score" id="credit_score">
+                                        <option>None</option>
+                                        {credits.map(credit => {
+                                            return <option key={credit.interest} value={credit.interest}>{credit.credit_score}</option>
+                                        })}
+                                    </select>
                                 </td>
                                 <td>
-                                    <h1>Calculated Price:</h1>
-                                    <p>Price Placeholder that Updates</p>
+                                    <h1>Calculated Price</h1>
+                                    <p>$ {calculate(sPrice, sDP, sLoan, sCredit)}</p>
                                 </td>
                             </tr>
                         </table>
