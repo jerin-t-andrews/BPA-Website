@@ -190,6 +190,8 @@ table {
   position: relative;
   top: 90%;
   color: white;
+  background-color: black;
+  border-radius: 1vw;
 }
 
 .options {
@@ -232,6 +234,10 @@ table {
 .contactForm {
   height: 100vh;
   background-image: url('./car-images/new-new.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .carList {
@@ -274,6 +280,11 @@ header {
 
 .main-content {
   margin-top: 2rem;
+}
+
+.carPicture {
+  width: 90vw;
+  margin: 0 auto;
 }
 
 .product {
@@ -331,6 +342,11 @@ header {
   z-index: 10;
 }
 
+.carPage img {
+  width: 40vw;
+  border-radius: 2vw;
+}
+
 .product-price {
   font-weight: bold;
   font-size: 140%;
@@ -367,6 +383,24 @@ header {
   background-color: #f1f1f1;
 }
 
+.carPage p {
+  font-size: 200%;
+  position: relative;
+}
+
+.estimator {
+  display: block;
+  margin: 0 auto;
+}
+
+.estimatorTable p {
+  font-size: 150%;
+}
+
+.estimatorTable {
+  width: 30vw;
+  margin: 2vh auto;
+}
 .new-text {
   color: white;
 }
