@@ -17,9 +17,9 @@ const HomePage = () => {
 
             <div className='content'>
                 <div className='logo-content'>
-                    <h1>Caravelle</h1>
+                    <h1 className='logo-font'>CARAVELLE</h1>
                     <img className='homeLogo' src={logo_} alt='logopng'/>
-                    <p>Elevate your Drive</p>  
+                    <p className='landing-font'>Elevate Your Drive</p>  
                 </div>
             </div>
             
@@ -28,7 +28,7 @@ const HomePage = () => {
             <Parallax strength={200} bgImage={luxury}>
                 <div className='content'>
                 <div className='text-content'>
-                    <div className='luxuryInfo'>
+                    <div className='luxuryInfo landing-font'>
                         <h1>Luxury</h1>
                         <p>Travel in style</p>
                     </div>
@@ -42,7 +42,7 @@ const HomePage = () => {
             <Parallax strength={400} bgImage={newcars}>
                 <div className='content'>
                 <div className='text-content'>
-                    <div className="new-text">
+                    <div className="new-text landing-font">
                         <h1>New</h1>
                         <p>Keeping it modern</p>
                     </div>
@@ -58,7 +58,7 @@ const HomePage = () => {
             <Parallax strength={200} bgImage={used}>
                 <div className='content'>
                 <div className='text-content'>
-                    <div className='usedInfo'>
+                    <div className='usedInfo landing-font'>
                         <h1>Used</h1>
                         <p>Exploration on a budget</p>
                     </div>
