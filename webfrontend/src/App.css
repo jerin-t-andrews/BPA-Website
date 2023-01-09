@@ -512,7 +512,8 @@ header {
 }
 .logo-font {
   font-family: 'Quicksand', sans-serif;
-  letter-spacing: 22pt;
+  letter-spacing: 2vw;
+  font-size: 11vw;
 }
 
 .landing-font {
