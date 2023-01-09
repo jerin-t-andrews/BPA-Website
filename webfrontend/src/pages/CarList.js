@@ -66,10 +66,6 @@ const CarList = () => {
         return car.type
     }))
 
-    const iRange = (x, min, max) => {
-        return x >= min && x <= max;
-    }
-
     return (
         <div className="ListPage">
             <h1 className='search'>Refine your Search</h1>
@@ -114,7 +110,7 @@ const CarList = () => {
                                 return <option key={type} value={type}> {type} </option>
                             })}
                         </select>        
-                        <h2>Mileage Range</h2>
+                        <h2>Mileage</h2>
                         <select value={selectMile} onChange={e=>setMile(e.target.value)}>
                             <option>None</option>
                             {mileages.map((t) => {
@@ -152,7 +148,7 @@ const CarList = () => {
                         <div className="product-price">
                             <h1>${filteredCar.price}</h1>
                             <br/>
-                        <button onClick={() => {navigate('/CarPage', {state:{id: filteredCar.id, make: filteredCar.make, model: filteredCar.model, year: filteredCar.year, path: filteredCar.path, price: filteredCar.price, mileage: filteredCar.mileage}})}} type='button' className='btn'>View</button>
+                        <button onClick={() => {navigate('/CarPage', {state:{id: filteredCar.id, make: filteredCar.make, model: filteredCar.model, year: filteredCar.year, path: filteredCar.path, price: filteredCar.price, build: filteredCar.build, type: filteredCar.type, mileage: filteredCar.mileage}})}} type='button' className='btn'>View</button>
                         </div>
                     
                     </div>

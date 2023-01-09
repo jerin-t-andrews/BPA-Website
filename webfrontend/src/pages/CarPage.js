@@ -64,9 +64,9 @@ const CarPage = () => {
                             <p><strong>Make: </strong> {location.state.make}</p>
                             <p><strong>Model: </strong> {location.state.model}</p>
                             <p><strong>Year: </strong> {location.state.year}</p>
-                            <p><strong>Build: </strong> Placeholder</p>
-                            <p><strong>Quality: </strong> Placeholder</p>
-                            <p><strong>Mileage: </strong> Placeholder</p>
+                            <p><strong>Build: </strong> {location.state.build}</p>
+                            <p><strong>Quality: </strong> {location.state.type}</p>
+                            <p><strong>Mileage: </strong> {location.state.mileage}</p>
                         </td>
                     </tr>
                     <tr>
