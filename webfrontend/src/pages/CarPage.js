@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import {useLocation} from 'react-router-dom'
-import { Parallax } from 'react-parallax';
 import { Link } from 'react-router-dom'
 
 const CarPage = () => {
@@ -58,7 +57,7 @@ const CarPage = () => {
                 <table>
                     <tr>
                         <td>
-                            <img src={location.state.path} alt='interiorpic'/>
+                            <img src={location.state.interior} alt='interiorpic'/>
                         </td>
                         <td>
                             <p><strong>Make: </strong> {location.state.make}</p>
@@ -102,7 +101,7 @@ const CarPage = () => {
                             </Link>
                         </td>
                         <td>
-                            <img src={location.state.path} alt='extraexteriorpic'/>
+                            <img src={location.state.side} alt='extraexteriorpic'/>
                         </td>
                     </tr>
                 </table>

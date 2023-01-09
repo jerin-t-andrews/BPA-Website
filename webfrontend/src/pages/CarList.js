@@ -126,12 +126,12 @@ const CarList = () => {
             {/* car => (car.make.match(selectMake)) */}
             <div className='carList'>
                 {data_.filter(car => (car.make.match(selectMake) && car.model.match(selectModel) && car.year.toString().match(selectYear) && car.build.match(selectBuild) && car.type.match(selectType)
-                && car.range.match(selectMile))
+                && car.mrange.match(selectMile))
                 ).map(filteredCar=> (
-                    <div className="product justify-content-center">
+                    <div className="product">
                 
                         <div className='product-image'>
-                            <img src={filteredCar.path} alt="carimg" height="150" />
+                            <img src={filteredCar.exterior} alt="carimg" height="150" />
                         </div>
 
                         <div className="product-detail">
@@ -148,7 +148,7 @@ const CarList = () => {
                         <div className="product-price">
                             <h1>${filteredCar.price}</h1>
                             <br/>
-                        <button onClick={() => {navigate('/CarPage', {state:{id: filteredCar.id, make: filteredCar.make, model: filteredCar.model, year: filteredCar.year, path: filteredCar.path, price: filteredCar.price, build: filteredCar.build, type: filteredCar.type, mileage: filteredCar.mileage}})}} type='button' className='btn'>View</button>
+                        <button onClick={() => {navigate('/CarPage', {state:{id: filteredCar.id, make: filteredCar.make, model: filteredCar.model, year: filteredCar.year, exterior: filteredCar.exterior, price: filteredCar.price, build: filteredCar.build, type: filteredCar.type, mileage: filteredCar.mileage, interior: filteredCar.interior, side: filteredCar.side}})}} type='button' className='btn'>View</button>
                         </div>
                     
                     </div>
