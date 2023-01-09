@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import data_ from '../json/CarList.json';
 import 'bootstrap';
-
+import { Link } from 'react-router-dom'
 
 const CarList = () => {
     const [selectMake, setMake] = useState();
@@ -53,7 +53,9 @@ const CarList = () => {
                         <div className="product-price">
                             <h1>$19.99</h1>
                             <br/>
+                            <Link to="/CarPage" className='ConLink'>
                             <button type='button' className='btn'>View</button>
+                            </Link>
                         </div>
                     
                     </div>

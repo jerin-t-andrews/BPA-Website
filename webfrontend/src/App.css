@@ -235,6 +235,7 @@ table {
 
 .contactForm {
   height: 100vh;
+  background-image: url('./car-images/new-new.jpg');
 }
 
 .carList {
@@ -244,6 +245,7 @@ table {
 }
 
 .contactTable {
+  background-color: white;
   position: relative;
   top: 25vh;
   box-shadow: 1px 2px 23px 9px rgba(0,0,0,0.75);
