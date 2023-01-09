@@ -2,11 +2,6 @@ html {
   height: 100%;
 }
 
-.ListPage, .ContactPage {
-  padding-top: 90px;
-}
-
-
 .navbar {
   /* background: #3C2A21; */
   max-height: 100px;
@@ -204,6 +199,7 @@ table {
   height: 20vh;
   position: fixed;
   transform: translate(2vw, 30vh);
+  z-index: 15
 }
 
 .options select {
