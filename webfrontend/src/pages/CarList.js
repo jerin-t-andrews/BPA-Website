@@ -79,7 +79,9 @@ const CarList = () => {
                         <div className="product-price">
                             <h1>$19.99</h1>
                             <br/>
+                            <Link className='ConLink' to='/CarPage'>
                             <button type='button' className='btn'>View</button>
+                            </Link>
                         </div>
                     
                     </div>
