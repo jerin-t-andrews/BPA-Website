@@ -9,6 +9,7 @@ html {
   background-color: transparent;
   /*margin: 0 auto;*/
   width: 100%;
+  
 }
 
 .navbar table {
@@ -23,6 +24,7 @@ html {
   height:60px;
   width: 100%;
   margin: 0 auto;
+  transform: translateY(-35%)
 }
 
 .splitter {
@@ -65,6 +67,7 @@ html {
   transition: 0.6s;
   position: center;
   font-size: 22px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .centerNav {
@@ -96,6 +99,18 @@ html {
   transform: translate(-50%, -50%);
   /*background: gray;*/
   color: white;
+  border-radius: 20px;
+  font-size: 50px;
+}
+
+.car-text-content {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 10vh;
+  padding: 5px 15px;
+  /*background: gray;*/
+  color: white;
+  transform: translateY(10vh);
   border-radius: 20px;
   font-size: 50px;
 }
@@ -145,6 +160,15 @@ body {
   right: 0;
   top: 80%;
   transition: 0.6s;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.carPage h1{
+  color: black;
+}
+
+.carPage p {
+  color: black;
 }
 
 .btn:hover {
@@ -162,11 +186,15 @@ body {
 }
 
 .carPage h1 {
-  color: black;
+  font-family: 'Playfair Display', serif;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
 }
 
 .carPage p {
-  color: black;
+  font-family: 'Playfair Display', serif;
 } */
 
 .about-table {
@@ -178,6 +206,7 @@ th {
   text-align: center;
   padding: 8px;
   font-size: 18px;
+  font-family: 'Quicksand', sans-serif;
 }
 
 table {
@@ -418,7 +447,7 @@ header {
 }
 
 .usedInfo {
-  color:white
+  color:white;
 }
 
 .luxuryInfo {
@@ -480,4 +509,12 @@ header {
 
 .select h2 {
   color: white;
+}
+.logo-font {
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 22pt;
+}
+
+.landing-font {
+  font-family: 'Quicksand', sans-serif;
 }
