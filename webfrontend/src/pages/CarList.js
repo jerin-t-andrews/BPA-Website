@@ -126,7 +126,7 @@ const CarList = () => {
             {/* car => (car.make.match(selectMake)) */}
             <div className='carList'>
                 {data_.filter(car => (car.make.match(selectMake) && car.model.match(selectModel) && car.year.toString().match(selectYear) && car.build.match(selectBuild) && car.type.match(selectType)
-                && car.range.match(selectMile))
+                && car.mrange.match(selectMile))
                 ).map(filteredCar=> (
                     <div className="product justify-content-center">
                 
