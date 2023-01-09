@@ -22,19 +22,27 @@ class ChatBot extends Component {
             {
                 id: '2',
                 options: [
-                    {value: 1, label: 'Used Cars', trigger: '3'},
-                    {value: 2, label: 'New Cars', trigger: '4'},
+                    {value: 1, label: 'Shop', trigger: '3'},
+                    {value: 2, label: 'Link to Representatives', trigger: '4'},
                 ]
             },
             {
                 id: '3',
-                message: 'Here are the results for Used Cars',
-                trigger: '1'
+                component: (
+                    <div></div>
+                ),
+                // message: 'Here is a link to the shop, in the shop you can filter through the various car options and view a variety of car models',
+                trigger: '5'
             },
             {
                 id: '4',
-                message: 'Here are the results for New Cars',
-                trigger: '1'
+                message: 'To contact a representative, either go to the contact page or contact either caravelleauto.gmail.com or (972) 277-1889',
+                trigger: '5'
+            },
+            {
+                id: '5',
+                message: "Anything else I can help you with?",
+                trigger: '2'
             }
         ]
 
