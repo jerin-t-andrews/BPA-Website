@@ -74,9 +74,6 @@ const Contact_new = () => {
                             <p>Sunnyvale</p>
                             <p>Texas </p>
                             <p>2023 </p>
-
-
-
                         </th>
                     </tr>
                     <tr>
