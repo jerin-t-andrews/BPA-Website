@@ -11,8 +11,9 @@ const CarPage = () => {
     let [sCredit, setCredit] = useState(.0661);
 
     function calculate(price, dp, loan, credit) {
+        var c = credit/12
         var x = price-dp;
-        var monthly_i = ((credit)/loan) * x
+        var monthly_i = ((x*c*((1+c)**loan))/(((1+c)**loan)-1));
         return monthly_i;
     }   
     

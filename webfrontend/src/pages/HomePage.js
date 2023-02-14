@@ -14,17 +14,18 @@ const HomePage = () => {
     return (
         <div className="Home">
             <ChatBot/>
-
-            <div className='content'>
-                <div className='logo-content'>
-                    <h1 className='logo-font'>CARAVELLE</h1>
-                    <img className='homeLogo' src={logo_} alt='logopng'/>
-                    <p className='landing-font'>Elevate Your Drive</p>  
+            <div className='gradient-content'>
+                <div className='content'>
+                    <div className='logo-content'>
+                        <h1 className='logo-font'>CARAVELLE</h1>
+                        <img className='homeLogo' src={logo_} alt='logopng'/>
+                        <p className='landing-font'>Elevate Your Drive</p>  
+                    </div>
                 </div>
             </div>
-            
-            <div className='homedivider'></div>
 
+            <div className='homedivider'></div>
+            
             <Parallax strength={200} bgImage={luxury}>
                 <div className='content'>
                 <div className='text-content'>
